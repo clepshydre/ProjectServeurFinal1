@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
 class StationController(val stationService : StationService) {
-    //http://localhost:8080/getAllStations?
+    //http://localhost:8080/getAllStations
     @GetMapping("/getAllStations")
     fun getAllStations() :ArrayList<StationBean>{
         println("/getAllStations")
         try {
-
+          var result =  stationService.getAll()
+            println(result)
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -26,8 +27,6 @@ class StationController(val stationService : StationService) {
 
         return "helloWorld"
     }
-
-
 
 
 }

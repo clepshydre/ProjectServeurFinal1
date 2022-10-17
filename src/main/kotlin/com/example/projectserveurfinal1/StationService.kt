@@ -6,12 +6,16 @@ import org.springframework.stereotype.Service
 @Service
 class StationService(val stationRep: StationRepository) {
 
-    fun refreshStationData():ArrayList<StationBean>{
+    fun refreshDataFromAPI():ArrayList<StationBean>{
         return arrayListOf(StationBean(null))
     }
 
 
-    fun addStationData(){
+    fun addStationDataToDB(){
 
     }
+
+
+    //test
+    fun getAll() = stationRep.findAll()
 }

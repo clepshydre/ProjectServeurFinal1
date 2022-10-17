@@ -10,8 +10,8 @@ data class StationBean(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id : Int? = null,
     var name: String = "",
-    var long : Double = 0.0,
-    var lat : Double = 0.0,
+    var longitude : Double = 0.0,
+    var latitude : Double = 0.0,
     var line:String=""
 )
 
