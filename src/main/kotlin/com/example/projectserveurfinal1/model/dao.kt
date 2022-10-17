@@ -18,15 +18,3 @@ object StationDao{
         return emptyList()
     }
 }
-
-object TypeLineDao{
-    fun loadAllTypeLine():List<TypeLineBean>{
-        return emptyList()
-    }
-}
-
-object CoordinateDao{
-    fun loadCoordinatesFromStation(station: Station): List<CoordinateBean>{
-        return emptyList()
-    }
-}

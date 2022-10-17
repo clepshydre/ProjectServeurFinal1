@@ -1,9 +1,7 @@
 package com.example.projectserveurfinal1.model
 
 data class LineBean(var id: Int? = null, var name: String = "")
-data class StationBean(var id : Int? = null, var name: String = "")
-data class TypeLineBean(var id: Int? = null, var name: String = "")
-data class CoordinateBean(var id : Int? = null, var long : Double = 0.0, var lat : Double = 0.0)
+data class StationBean(var id : Int? = null, var name: String = "", var long : Double = 0.0, var lat : Double = 0.0)
 
 data class Station(
     val nhits: Int,
