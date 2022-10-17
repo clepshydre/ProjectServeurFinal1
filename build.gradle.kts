@@ -29,10 +29,12 @@ dependencies {
 
     //request
     implementation("com.squareup.okhttp3:okhttp:+")
-    implementation ("com.google.code.gson:gson:2.3")
+    implementation ("com.google.code.gson:gson:2.9.1")
 
-    //spring
+    //spring et database
+    runtimeOnly ("mysql:mysql-connector-java")
     implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation ("org.jetbrains.kotlin:kotlin-reflect")
 
 }
 

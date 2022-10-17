@@ -1,15 +1,16 @@
 package com.example.projectserveurfinal1.controller
 
+import com.example.projectserveurfinal1.StationService
 import com.example.projectserveurfinal1.model.StationBean
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-class StationController {
-    //http://localhost:8080/readStationList?
-    @GetMapping("/readStationList")
-    fun readStationList() :ArrayList<StationBean>{
-        println("/readStationList")
+class StationController(val stationService : StationService) {
+    //http://localhost:8080/getAllStations?
+    @GetMapping("/getAllStations")
+    fun getAllStations() :ArrayList<StationBean>{
+        println("/getAllStations")
         try {
 
         } catch (e: Exception) {
