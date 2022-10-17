@@ -25,6 +25,14 @@ dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+
+    //request
+    implementation("com.squareup.okhttp3:okhttp:+")
+    implementation ("com.google.code.gson:gson:2.3")
+
+    //spring
+    implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
 }
 
 tasks.withType<KotlinCompile> {
