@@ -28,17 +28,11 @@ object RequestsUtils {
         }
     }
 
-    //TIMER GET
-    fun timerSendGet():String{
-        return ""
-    }
 
 
     //GET STATIONS SUBWAY
     fun loadStation():ArrayList<StationBean>{
         return arrayListOf(StationBean(null))
     }
-
-
 
 }

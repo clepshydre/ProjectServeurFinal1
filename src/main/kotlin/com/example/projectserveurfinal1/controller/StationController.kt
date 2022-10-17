@@ -18,7 +18,6 @@ class StationController {
         return arrayListOf(StationBean(null))
     }
 
-
     //http://localhost:8080/testHello
     @GetMapping("/testHello")
     fun testHelloWorld(): String {
@@ -26,5 +25,8 @@ class StationController {
 
         return "helloWorld"
     }
+
+
+
 
 }

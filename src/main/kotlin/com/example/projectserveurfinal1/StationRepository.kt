@@ -1,4 +1,4 @@
-package com.example.projectserveurfinal1.controller
+package com.example.projectserveurfinal1
 
 import com.example.projectserveurfinal1.model.StationBean
 import org.springframework.data.jpa.repository.JpaRepository

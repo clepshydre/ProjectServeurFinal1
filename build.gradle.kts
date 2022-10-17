@@ -33,6 +33,7 @@ dependencies {
 
     //spring
     implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
+
 }
 
 tasks.withType<KotlinCompile> {
