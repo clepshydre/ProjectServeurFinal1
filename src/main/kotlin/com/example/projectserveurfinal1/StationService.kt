@@ -6,16 +6,20 @@ import org.springframework.stereotype.Service
 @Service
 class StationService(val stationRep: StationRepository) {
 
-    fun refreshDataFromAPI():ArrayList<StationBean>{
+    fun loadStation():ArrayList<StationBean>{
         return arrayListOf(StationBean(null))
     }
 
 
-    fun addStationDataToDB(){
+    fun refreshDataFromAPI(){
 
     }
 
 
     //test
-    fun getAll() = stationRep.findAll()
+//    fun getAll() = stationRep.findAll()
+//
+//    fun add() = stationRep.save(StationBean(2, "test",2.2, 2.2, "C" ))
+//
+//    fun deleteAll() = stationRep.deleteAll()
 }

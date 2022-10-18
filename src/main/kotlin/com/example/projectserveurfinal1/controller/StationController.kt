@@ -12,8 +12,16 @@ class StationController(val stationService : StationService) {
     fun getAllStations() :ArrayList<StationBean>{
         println("/getAllStations")
         try {
-          var result =  stationService.getAll()
-            println(result)
+
+
+            //TEST CONNEXION BDD
+//            stationService.deleteAll()
+//            stationService.add()
+//          var result =  stationService.getAll()
+//            println("ajout : "+result)
+//            stationService.deleteAll()
+//            var result2 =  stationService.getAll()
+//            println("delete : "+result2)
         } catch (e: Exception) {
             e.printStackTrace()
         }
