@@ -12,12 +12,14 @@ class StationService(val stationRep: StationRepository) {
 
     //ajouter les données en BDD
     fun refreshDataFromAPI(){
+        //delete + rajout en bdd
         stationRep.deleteAll()
         var newData = RequestsUtils.loadStation()
         newData.forEach {
             stationRep.save(it)
         }
         println(newData)
+
     }
 
     //Chercher les données en bdd et les retourner
