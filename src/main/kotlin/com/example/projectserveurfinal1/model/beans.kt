@@ -15,3 +15,15 @@ data class StationBean(
     var line:String=""
 )
 
+
+// api
+
+data class SubwayBean( var records : ArrayList<RecordBean>)
+data class RecordBean( var fields : StationAPIBean)
+
+data class StationAPIBean(
+    var nom: String,
+    var ligne: String,
+    var geo_point_2d:ArrayList<Double>
+)
+
