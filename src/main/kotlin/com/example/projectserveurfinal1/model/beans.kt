@@ -16,6 +16,11 @@ data class StationBean(
 )
 
 
+data class ErreurBean(
+    var code_erreur:Int
+)
+
+
 // api
 
 data class SubwayBean( var records : ArrayList<RecordBean>)

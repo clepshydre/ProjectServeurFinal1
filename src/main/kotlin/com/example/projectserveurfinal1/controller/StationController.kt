@@ -1,6 +1,7 @@
 package com.example.projectserveurfinal1.controller
 
 import com.example.projectserveurfinal1.StationService
+import com.example.projectserveurfinal1.model.ErreurBean
 import com.example.projectserveurfinal1.model.StationBean
 import com.google.gson.Gson
 import org.springframework.stereotype.Controller
@@ -17,10 +18,11 @@ class StationController(val stationService : StationService) {
         println("/getAllStations")
         try {
            return stationService.loadStation()
+
         } catch (e: Exception) {
             e.printStackTrace()
             response.status = 512
-            return response.status
+            return ErreurBean(512)
         }
     }
 
