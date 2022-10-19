@@ -22,7 +22,7 @@ class StationController(val stationService : StationService) {
         } catch (e: Exception) {
             e.printStackTrace()
             response.status = 512
-            return ErreurBean(512)
+            return e
         }
     }
 
