@@ -19,7 +19,7 @@ class StationController(val stationService : StationService) {
            return stationService.loadStation()
         } catch (e: Exception) {
             e.printStackTrace()
-            response.status = 501
+            response.status = 512
             return response.status
         }
     }
