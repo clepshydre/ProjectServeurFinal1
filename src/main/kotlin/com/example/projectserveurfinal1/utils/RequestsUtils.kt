@@ -12,7 +12,8 @@ object RequestsUtils {
 
     val client = OkHttpClient()
     val gson = Gson()
-    private const val URL_SUBWAY = "https://data.toulouse-metropole.fr/api/records/1.0/search/?dataset=stations-de-metro"
+    private const val URL_SUBWAY_10 = "https://data.toulouse-metropole.fr/api/records/1.0/search/?dataset=stations-de-metro"
+    private const val URL_SUBWAY = "https://data.toulouse-metropole.fr/api/records/1.0/search/?dataset=stations-de-metro&q=&rows=44&facet=ligne"
 
 
     //GET HTML
@@ -44,8 +45,10 @@ object RequestsUtils {
         //Remplir les beans pour la nouvelle API
         var arrayStation= ArrayList<StationBean>()
         data.records.forEach {
-            var station = StationBean(null, it.fields.nom, it.fields.geo_point_2d[1], it.fields.geo_point_2d[0], it.fields.ligne)
-            arrayStation.add(station)
+
+               var station = StationBean(null, it.fields.nom, it.fields.geo_point_2d[1], it.fields.geo_point_2d[0], it.fields.ligne)
+                arrayStation.add(station)
+
         }
 
         //Retourner la donnée

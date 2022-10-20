@@ -17,7 +17,7 @@ class StationController(val stationService : StationService) {
     fun getAllStations(response: HttpServletResponse) : Any {
         println("/getAllStations")
         try {
-           return stationService.loadStation()
+            return stationService.loadStation()
 
         } catch (e: Exception) {
             e.printStackTrace()

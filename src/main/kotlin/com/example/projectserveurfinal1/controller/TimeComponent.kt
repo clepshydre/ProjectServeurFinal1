@@ -14,7 +14,7 @@ class TimeComponent(val stationService: StationService) {
         println("done")
     }
 
-    //Action chaque minute
+//    //Action chaque minute
 //    @Scheduled(fixedRate = 60000)
 //    fun everyMinute() {
 //        stationService.refreshDataFromAPI()
